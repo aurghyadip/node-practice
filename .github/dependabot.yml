@@ -1,0 +1,20 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "23:30"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: express-validator
+    versions:
+    - 6.10.0
+    - 6.9.2
+  - dependency-name: express-handlebars
+    versions:
+    - 5.2.0
+    - 5.2.1
+  - dependency-name: pug
+    versions:
+    - 3.0.0
